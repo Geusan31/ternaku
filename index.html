@@ -7,103 +7,11 @@
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="https://ternaku.id/assets/front/images/logo1.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
-        * {
-          font-family: "Poppins", sans-serif;
-        }
-
-        .gradient-bg {
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-        }
-
-        .hero-overlay {
-          background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.3)
-          );
-        }
-
-        .card-hover {
-          transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .slide {
-          display: none;
-        }
-
-        .slide.active {
-          display: block;
-        }
-
-        .nav-link {
-          position: relative;
-          transition: color 0.3s ease;
-        }
-
-        .nav-link::after {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 2px;
-          bottom: -5px;
-          left: 50%;
-          background-color: #f59e0b;
-          transition: all 0.3s ease;
-          transform: translateX(-50%);
-        }
-
-        .nav-link:hover::after {
-          width: 100%;
-        }
-
-        .btn-primary {
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-          transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-          transform: scale(1.05);
-          box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
-        }
-
-        .feature-icon {
-          background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .fade-in {
-          animation: fadeIn 0.8s ease forwards;
-        }
-
-        .parallax {
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-      </style>
   </head>
   <body class="bg-gray-50">
       <!-- Top Bar -->
