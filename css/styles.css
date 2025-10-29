@@ -1,18 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
-  top: 40% !important; /* Mengatur posisi vertikal tombol */
-  background-color: #d97706; /* Ini adalah 'bg-amber-600' */
-  border-radius: 50%; /* 'rounded-full' */
-  width: 3rem !important; /* 'w-12' */
-  height: 3rem !important; /* 'h-12' */
+  top: 40% !important;
+  background-color: #d97706;
+  border-radius: 50%;
+  width: 3rem !important;
+  height: 3rem !important;
 
-  /* Mengatur ikon panah di dalamnya */
-  color: #ffffff !important; /* 'text-white' */
+  color: #ffffff !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  display: none !important; /* Menghilangkan ikon default */
+  display: none !important;
 }
 
 .swiper-button-prev {
@@ -23,24 +28,8 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='white'><path stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' /></svg>");
 }
 
-/* .swiper-button-next,
-.swiper-button-prev {
-  background-repeat: no-repeat;
-  background-position: center;
-
-  background-size: 16px;
-} */
-
 .caption-banner {
-  /* (Bentuk panah/segitiga di kanan) */
   clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .gradient-bg {

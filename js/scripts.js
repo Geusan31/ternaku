@@ -36,10 +36,8 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
 
-// Auto slide every 5 seconds
 let autoSlideInterval = setInterval(nextSlide, 5000);
 
-// Pause auto-slide on hover
 const sliderContainer = document.getElementById("slider");
 sliderContainer.addEventListener("mouseenter", () => {
   clearInterval(autoSlideInterval);
@@ -49,16 +47,13 @@ sliderContainer.addEventListener("mouseleave", () => {
   autoSlideInterval = setInterval(nextSlide, 5000);
 });
 
-// Initialize first slide
 showSlide(0);
 
-// Mobile menu toggle
 function toggleMobileMenu() {
   const menu = document.querySelector(".md\\:flex");
   menu.classList.toggle("hidden");
 }
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -72,7 +67,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Intersection Observer for fade-in animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -94,7 +88,6 @@ document.querySelectorAll(".fade-in, .card-hover").forEach((el) => {
   observer.observe(el);
 });
 
-// Navbar background on scroll
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
