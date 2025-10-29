@@ -1,0 +1,178 @@
+.swiper-button-next,
+.swiper-button-prev {
+  top: 40% !important; /* Mengatur posisi vertikal tombol */
+  background-color: #d97706; /* Ini adalah 'bg-amber-600' */
+  border-radius: 50%; /* 'rounded-full' */
+  width: 3rem !important; /* 'w-12' */
+  height: 3rem !important; /* 'h-12' */
+
+  /* Mengatur ikon panah di dalamnya */
+  color: #ffffff !important; /* 'text-white' */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important; /* Menghilangkan ikon default */
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='white'><path stroke-linecap='round' stroke-linejoin='round' d='M15.75 19.5 8.25 12l7.5-7.5' /></svg>");
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='white'><path stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' /></svg>");
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: 16px;
+} */
+
+.caption-banner {
+  /* (Bentuk panah/segitiga di kanan) */
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.card-hover {
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(245, 158, 11, 0.2);
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeIn 0.8s ease;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #f59e0b;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+}
+
+.feature-icon {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.step-number {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+}
+
+.timeline-line {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 2px;
+  height: calc(100% - 60px);
+  background: linear-gradient(to bottom, #f59e0b, #d97706);
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.benefit-card {
+  background: white;
+  border-left: 4px solid #f59e0b;
+}
