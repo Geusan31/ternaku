@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
-    "build:js": "npx terser ./js/scripts.js -o ./js/scripts.min.js -c -m",
-    "build": "npm run build:css && npm run build:js",
-    "start": "npx live-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
