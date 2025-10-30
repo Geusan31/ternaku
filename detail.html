@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk | ternaku.id</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+      <div class="container mx-auto px-4 md:px-8 lg:px-32 py-4">
+        <div class="flex items-center gap-2 text-sm">
+          <a href="/" class="text-emerald-600 hover:text-emerald-700">Home</a>
+          <svg
+            class="w-4 h-4 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+          <a href="#" class="text-emerald-600 hover:text-emerald-700"
+            >Marketplace</a
+          >
+          <svg
+            class="w-4 h-4 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+          <a href="#" class="text-emerald-600 hover:text-emerald-700">Sapi</a>
+          <svg
+            class="w-4 h-4 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+          <span class="text-gray-600">Sapi Limosin Premium 350Kg</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 md:px-8 lg:px-32 py-8">
+      <div class="grid lg:grid-cols-12 gap-8">
+        <!-- Left: Product Images -->
+        <div class="lg:col-span-4">
+          <div class="bg-white rounded-2xl p-6 shadow-lg sticky top-8">
+            <!-- Main Image -->
+            <div
+              class="mb-4 rounded-xl overflow-hidden border-2 border-gray-200"
+            >
+              <img
+                id="mainImage"
+                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600"
+                alt="Sapi Limosin"
+                class="w-full h-96 object-cover zoom-image"
+              />
+            </div>
+
+            <!-- Thumbnail Images -->
+            <div class="grid grid-cols-4 gap-3">
+              <div
+                class="thumbnail active rounded-lg overflow-hidden border-2 border-gray-300"
+                onclick="changeImage(this, 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600')"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=150"
+                  alt="Thumbnail 1"
+                  class="w-full h-20 object-cover"
+                />
+              </div>
+              <div
+                class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
+                onclick="changeImage(this, 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600')"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=150"
+                  alt="Thumbnail 2"
+                  class="w-full h-20 object-cover"
+                />
+              </div>
+              <div
+                class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
+                onclick="changeImage(this, 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600')"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=150"
+                  alt="Thumbnail 3"
+                  class="w-full h-20 object-cover"
+                />
+              </div>
+              <div
+                class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
+                onclick="changeImage(this, 'https://images.unsplash.com/photo-1568455433991-ac0a1e0c0a00?w=600')"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1568455433991-ac0a1e0c0a00?w=150"
+                  alt="Thumbnail 4"
+                  class="w-full h-20 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: Product Info -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <h1 class="text-2xl font-bold text-gray-800 mb-3">
+              Kambing Etawa Premium
+            </h1>
+
+            <!-- Rating & Sales -->
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex items-center gap-1">
+                <span class="text-sm font-medium">Terjual</span>
+                <span class="text-sm font-bold text-gray-800">100+</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="flex">
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-bold text-gray-800 ml-1">5</span>
+                </div>
+                <span class="text-sm text-gray-600">(32 rating)</span>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="mb-6">
+              <h2 class="text-3xl font-bold text-gray-900">Rp128.000.000</h2>
+            </div>
+
+            <!-- Variant: Bobot -->
+            <div class="mb-6">
+              <label class="block text-sm font-semibold text-gray-700 mb-3"
+                >Pilih bobot:</label
+              >
+              <div class="flex gap-3 flex-wrap">
+                <div
+                  class="variant-option active border-2 border-gray-300 rounded-xl px-4 py-3 flex items-center gap-2"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    alt=""
+                    class="w-8 h-8 rounded object-cover"
+                  />
+                  <span class="text-sm">350-400 Kg</span>
+                </div>
+                <div
+                  class="variant-option border-2 border-gray-300 rounded-xl px-4 py-3 flex items-center gap-2"
+                  onclick="selectVariant(this, '300-350 Kg', 'Rp25.000.000')"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    alt=""
+                    class="w-8 h-8 rounded object-cover"
+                  />
+                  <span class="text-sm">300-350 Kg</span>
+                </div>
+                <div
+                  class="variant-option border-2 border-gray-300 rounded-xl px-4 py-3 flex items-center gap-2"
+                  onclick="selectVariant(this, '400-450 Kg', 'Rp32.000.000')"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    alt=""
+                    class="w-8 h-8 rounded object-cover"
+                  />
+                  <span class="text-sm">400-450 Kg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Variant: Garansi -->
+            <div class="mb-6">
+              <label class="block text-sm font-semibold text-gray-700 mb-3"
+                >Pilih garansi:</label
+              >
+              <div class="flex gap-3">
+                <div
+                  class="variant-option active border-2 border-gray-300 rounded-xl px-6 py-3"
+                >
+                  <span class="text-sm">7 HARI</span>
+                </div>
+                <div
+                  class="variant-option border-2 border-gray-300 rounded-xl px-6 py-3"
+                  onclick="selectVariant(this, '14 HARI', null)"
+                >
+                  <span class="text-sm">14 HARI</span>
+                </div>
+                <div
+                  class="variant-option border-2 border-gray-300 rounded-xl px-6 py-3"
+                  onclick="selectVariant(this, '30 HARI', null)"
+                >
+                  <span class="text-sm">30 HARI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="space-y-3 mb-6 bg-gray-50 rounded-xl p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Kondisi:</span>
+                <span class="text-sm font-semibold text-green-600"
+                  >Sehat & Aktif</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Min. Pemesanan:</span>
+                <span class="text-sm font-semibold">1 Ekor</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Etalase:</span>
+                <span class="text-sm font-semibold text-emerald-600"
+                  >Sapi Premium</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Lokasi:</span>
+                <span class="text-sm font-semibold">Dermaji, Banyumas</span>
+              </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="border-b border-gray-200 mb-6">
+              <div class="flex gap-8">
+                <button
+                  class="tab-button active pb-3 text-sm"
+                  onclick="switchTab('detail')"
+                >
+                  Detail Produk
+                </button>
+                <button
+                  class="tab-button pb-3 text-sm text-gray-600"
+                  onclick="switchTab('spesifikasi')"
+                >
+                  Spesifikasi
+                </button>
+                <button
+                  class="tab-button pb-3 text-sm text-gray-600"
+                  onclick="switchTab('info')"
+                >
+                  Info Penting
+                </button>
+              </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="tabContent">
+              <div id="detail-tab" class="tab-content">
+                <div class="space-y-4 text-sm text-gray-700">
+                  <p class="font-semibold text-gray-900">
+                    SELAMAT DATANG DI TOKO KAMI
+                  </p>
+                  <p>
+                    Kami menyediakan sapi limosin premium berkualitas tinggi
+                    dengan sertifikat kesehatan lengkap dari dinas peternakan
+                    setempat.
+                  </p>
+
+                  <div
+                    class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded"
+                  >
+                    <p class="font-semibold text-amber-800 mb-2">
+                      🎉 Promo Spesial:
+                    </p>
+                    <ul class="space-y-1 text-amber-700">
+                      <li>✓ Gratis ongkir radius 50km</li>
+                      <li>✓ Garansi kesehatan 7 hari</li>
+                      <li>✓ Konsultasi gratis dengan dokter hewan</li>
+                    </ul>
+                  </div>
+
+                  <p class="font-semibold text-gray-900 mt-4">
+                    Keunggulan Produk:
+                  </p>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2">
+                      <svg
+                        class="w-5 h-5 text-green-600 mt-0.5 shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>Sapi dari peternakan bersertifikat</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <svg
+                        class="w-5 h-5 text-green-600 mt-0.5 shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>Vaksinasi lengkap dan up-to-date</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <svg
+                        class="w-5 h-5 text-green-600 mt-0.5 shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>Pengiriman dengan truk khusus ternak</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <svg
+                        class="w-5 h-5 text-green-600 mt-0.5 shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>Dokumentasi lengkap dan legal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div class="lg:col-span-3">
+          <div class="bg-white rounded-2xl p-6 shadow-lg sticky top-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">
+              Atur jumlah dan catatan
+            </h3>
+
+            <!-- Product Summary -->
+            <div class="flex items-center gap-3 mb-4 pb-4 border-b">
+              <img
+                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=80"
+                alt="Product"
+                class="w-16 h-16 rounded-lg object-cover"
+              />
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-gray-800">
+                  Sapi 350Kg, 7 HARI
+                </p>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="mb-6">
+              <div class="flex items-center justify-between">
+                <button
+                  onclick="decreaseQty()"
+                  class="w-10 h-10 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 12H4"
+                    ></path>
+                  </svg>
+                </button>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="1"
+                  class="w-20 text-center text-lg font-semibold border-0 focus:outline-none"
+                  readonly
+                />
+                <button
+                  onclick="increaseQty()"
+                  class="w-10 h-10 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-2 text-right">
+                <span class="text-sm text-gray-600">Stok: </span>
+                <span class="text-sm font-semibold text-amber-600">Sisa 9</span>
+              </div>
+            </div>
+
+            <!-- Subtotal -->
+            <div class="mb-6 pb-6 border-b">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-sm text-gray-600">Subtotal</span>
+                <span id="subtotal" class="text-2xl font-bold text-gray-900"
+                  >Rp28.000.000</span
+                >
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-3">
+              <button
+                class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl"
+              >
+                + Keranjang
+              </button>
+              <button
+                class="w-full bg-amber-600 hover:from-amber-700 hover:to-orange-700 text-white py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl"
+              >
+                Beli Langsung
+              </button>
+            </div>
+
+            <!-- Additional Actions -->
+            <div class="grid grid-cols-3 gap-2 mt-4">
+              <button
+                class="flex items-center justify-center gap-2 py-3 border-2 border-gray-300 rounded-xl hover:border-amber-600 hover:bg-amber-50 transition-all"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  ></path>
+                </svg>
+                <span class="text-sm font-medium">Chat</span>
+              </button>
+              <button
+                class="flex items-center justify-center gap-2 py-3 border-2 border-gray-300 rounded-xl hover:border-red-600 hover:bg-red-50 transition-all"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
+                </svg>
+                <span class="text-sm font-medium">Wishlist</span>
+              </button>
+              <button
+                class="flex items-center justify-center gap-2 py-3 border-2 border-gray-300 rounded-xl hover:border-blue-600 hover:bg-blue-50 transition-all"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                  ></path>
+                </svg>
+                <span class="text-sm font-medium">Share</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Change main image
+      function changeImage(thumbnail, src) {
+        document.getElementById("mainImage").src = src;
+        document
+          .querySelectorAll(".thumbnail")
+          .forEach((t) => t.classList.remove("active"));
+        thumbnail.classList.add("active");
+      }
+
+      // Select variant
+      function selectVariant(element, variantName, price) {
+        const parent = element.parentElement;
+        parent
+          .querySelectorAll(".variant-option")
+          .forEach((opt) => opt.classList.remove("active"));
+        element.classList.add("active");
+
+        if (price) {
+          document.getElementById("subtotal").textContent = price;
+        }
+      }
+
+      // Quantity controls
+      let quantity = 1;
+      const basePrice = 28000000;
+
+      function increaseQty() {
+        quantity++;
+        document.getElementById("quantity").value = quantity;
+        updateSubtotal();
+      }
+
+      function decreaseQty() {
+        if (quantity > 1) {
+          quantity--;
+          document.getElementById("quantity").value = quantity;
+          updateSubtotal();
+        }
+      }
+
+      function updateSubtotal() {
+        const total = basePrice * quantity;
+        document.getElementById("subtotal").textContent =
+          "Rp" + total.toLocaleString("id-ID");
+      }
+
+      // Tab switching
+      function switchTab(tabName) {
+        document.querySelectorAll(".tab-button").forEach((btn) => {
+          btn.classList.remove("active");
+          btn.classList.add("text-gray-600");
+        });
+
+        event.target.classList.add("active");
+        event.target.classList.remove("text-gray-600");
+
+        // You can add different content for different tabs here
+        const content = {
+          detail: `
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p class="font-semibold text-gray-900">SELAMAT DATANG DI TOKO KAMI</p>
+                        <p>Kami menyediakan sapi limosin premium berkualitas tinggi dengan sertifikat kesehatan lengkap dari dinas peternakan setempat.</p>
+                        
+                        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                            <p class="font-semibold text-amber-800 mb-2">🎉 Promo Spesial:</p>
+                            <ul class="space-y-1 text-amber-700">
+                                <li>✓ Gratis ongkir radius 50km</li>
+                                <li>✓ Garansi kesehatan 7 hari</li>
+                                <li>✓ Konsultasi gratis dengan dokter hewan</li>
+                            </ul>
+                        </div>
+                    </div>
+                `,
+          spesifikasi: `
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between py-2 border-b">
+                            <span class="text-gray-600">Jenis</span>
+                            <span class="font-semibold">Sapi Limosin</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b">
+                            <span class="text-gray-600">Bobot</span>
+                            <span class="font-semibold">350-400 Kg</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b">
+                            <span class="text-gray-600">Usia</span>
+                            <span class="font-semibold">2-3 Tahun</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b">
+                            <span class="text-gray-600">Jenis Kelamin</span>
+                            <span class="font-semibold">Jantan</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b">
+                            <span class="text-gray-600">Kesehatan</span>
+                            <span class="font-semibold text-green-600">Sehat & Aktif</span>
+                        </div>
+                    </div>
+                `,
+          info: `
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                            <p class="font-semibold text-blue-800 mb-2">ℹ️ Info Penting:</p>
+                            <ul class="space-y-2 text-blue-700">
+                                <li>• Pembayaran hanya melalui sistem platform untuk keamanan transaksi</li>
+                                <li>• Pengiriman memerlukan waktu 1-3 hari kerja</li>
+                                <li>• Pastikan ada tempat yang memadai untuk ternak</li>
+                                <li>• Sertifikat kesehatan akan dikirim bersamaan dengan ternak</li>
+                                <li>• Hubungi penjual untuk informasi lebih lanjut</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded mt-4">
+                            <p class="font-semibold text-green-800 mb-2">✓ Garansi:</p>
+                            <p class="text-green-700">Kami memberikan garansi kesehatan 7 hari sejak ternak diterima. Jika ada masalah kesehatan yang terbukti bukan karena kelalaian pembeli, kami siap bertanggung jawab penuh.</p>
+                        </div>
+                    </div>
+                `,
+        };
+
+        document.getElementById("tabContent").innerHTML = content[tabName];
+      }
+    </script>
+  </body>
+</html>

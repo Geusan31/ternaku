@@ -165,3 +165,160 @@
   background: white;
   border-left: 4px solid #f59e0b;
 }
+
+.gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.product-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.filter-chip {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-chip:hover {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.filter-chip.active {
+  background-color: #f59e0b;
+  color: white;
+  border-color: #f59e0b;
+}
+
+.search-box {
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.section-card {
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+}
+
+.toc-link {
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.toc-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 0;
+  background: #f59e0b;
+  transition: height 0.3s ease;
+}
+
+.toc-link:hover::before,
+.toc-link.active::before {
+  height: 100%;
+}
+
+.toc-link.active {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.content-section {
+  scroll-margin-top: 100px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.product-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.filter-chip {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-chip:hover {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.filter-chip.active {
+  background-color: #f59e0b;
+  color: white;
+  border-color: #f59e0b;
+}
+
+.search-box {
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}

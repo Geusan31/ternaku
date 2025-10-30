@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "build:js": "npx terser ./js/scripts.js -o ./js/scripts.min.js -c -m",
+    "build": "npm run build:css && npm run build:js",
+    "start": "npx live-server"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "terser": "^5.44.0"
   }
 }
