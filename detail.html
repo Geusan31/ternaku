@@ -18,7 +18,7 @@
     <div class="bg-white border-b">
       <div class="container mx-auto px-4 md:px-8 lg:px-32 py-4">
         <div class="flex items-center gap-2 text-sm">
-          <a href="/" class="text-emerald-600 hover:text-emerald-700">Home</a>
+          <a href="/" class="text-amber-600 hover:text-amber-700">Home</a>
           <svg
             class="w-4 h-4 text-gray-400"
             fill="none"
@@ -32,7 +32,7 @@
               d="M9 5l7 7-7 7"
             ></path>
           </svg>
-          <a href="#" class="text-emerald-600 hover:text-emerald-700"
+          <a href="#" class="text-amber-600 hover:text-amber-700"
             >Marketplace</a
           >
           <svg
@@ -48,7 +48,7 @@
               d="M9 5l7 7-7 7"
             ></path>
           </svg>
-          <a href="#" class="text-emerald-600 hover:text-emerald-700">Sapi</a>
+          <a href="#" class="text-amber-600 hover:text-amber-700">Kambing</a>
           <svg
             class="w-4 h-4 text-gray-400"
             fill="none"
@@ -62,24 +62,24 @@
               d="M9 5l7 7-7 7"
             ></path>
           </svg>
-          <span class="text-gray-600">Sapi Limosin Premium 350Kg</span>
+          <span class="text-gray-600">Kambing Etawa Premium</span>
         </div>
       </div>
     </div>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4 md:px-8 lg:px-32 py-8">
+    <div class="container mx-auto px-4 md:px-8 lg:px-16 py-8">
       <div class="grid lg:grid-cols-12 gap-8">
         <!-- Left: Product Images -->
         <div class="lg:col-span-4">
-          <div class="bg-white rounded-2xl p-6 shadow-lg sticky top-8">
+          <div class="rounded-2xl p-6 sticky top-8">
             <!-- Main Image -->
             <div
               class="mb-4 rounded-xl overflow-hidden border-2 border-gray-200"
             >
               <img
                 id="mainImage"
-                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600"
+                src="./assets/img/kambing2.jpg"
                 alt="Sapi Limosin"
                 class="w-full h-96 object-cover zoom-image"
               />
@@ -89,40 +89,40 @@
             <div class="grid grid-cols-4 gap-3">
               <div
                 class="thumbnail active rounded-lg overflow-hidden border-2 border-gray-300"
-                onclick="changeImage(this, 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600')"
+                onclick="changeImage(this, './assets/img/kambing2.jpg')"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=150"
+                  src="./assets/img/kambing2.jpg"
                   alt="Thumbnail 1"
                   class="w-full h-20 object-cover"
                 />
               </div>
               <div
                 class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
-                onclick="changeImage(this, 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600')"
+                onclick="changeImage(this, './assets/img/kambing1.jpg')"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=150"
+                  src="./assets/img/kambing1.jpg"
                   alt="Thumbnail 2"
                   class="w-full h-20 object-cover"
                 />
               </div>
               <div
                 class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
-                onclick="changeImage(this, 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600')"
+                onclick="changeImage(this, './assets/img/kambing3.jpg')"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=150"
+                  src="./assets/img/kambing3.jpg"
                   alt="Thumbnail 3"
                   class="w-full h-20 object-cover"
                 />
               </div>
               <div
                 class="thumbnail rounded-lg overflow-hidden border-2 border-gray-300"
-                onclick="changeImage(this, 'https://images.unsplash.com/photo-1568455433991-ac0a1e0c0a00?w=600')"
+                onclick="changeImage(this, './assets/img/kambing4.jpg')"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1568455433991-ac0a1e0c0a00?w=150"
+                  src="./assets/img/kambing4.jpg"
                   alt="Thumbnail 4"
                   class="w-full h-20 object-cover"
                 />
@@ -133,7 +133,7 @@
 
         <!-- Middle: Product Info -->
         <div class="lg:col-span-5">
-          <div class="bg-white rounded-2xl p-6 shadow-lg">
+          <div class="rounded-2xl p-6">
             <h1 class="text-2xl font-bold text-gray-800 mb-3">
               Kambing Etawa Premium
             </h1>
@@ -174,9 +174,10 @@
               <div class="flex gap-3 flex-wrap">
                 <div
                   class="variant-option active border-2 border-gray-300 rounded-xl px-4 py-3 flex items-center gap-2"
+                  onclick="selectVariant(this, '350-400 Kg', 'Rp28.000.000')"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    src="./assets/img/kambing2.jpg"
                     alt=""
                     class="w-8 h-8 rounded object-cover"
                   />
@@ -187,7 +188,7 @@
                   onclick="selectVariant(this, '300-350 Kg', 'Rp25.000.000')"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    src="./assets/img/kambing1.jpg"
                     alt=""
                     class="w-8 h-8 rounded object-cover"
                   />
@@ -198,7 +199,7 @@
                   onclick="selectVariant(this, '400-450 Kg', 'Rp32.000.000')"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=50"
+                    src="./assets/img/kambing3.jpg"
                     alt=""
                     class="w-8 h-8 rounded object-cover"
                   />
@@ -215,6 +216,7 @@
               <div class="flex gap-3">
                 <div
                   class="variant-option active border-2 border-gray-300 rounded-xl px-6 py-3"
+                  onclick="selectVariant(this, '7 HARI', null)"
                 >
                   <span class="text-sm">7 HARI</span>
                 </div>
@@ -376,7 +378,7 @@
 
         <!-- Right: Order Summary -->
         <div class="lg:col-span-3">
-          <div class="bg-white rounded-2xl p-6 shadow-lg sticky top-8">
+          <div class="rounded-2xl p-6 sticky top-8">
             <h3 class="text-lg font-bold text-gray-800 mb-4">
               Atur jumlah dan catatan
             </h3>
@@ -384,7 +386,7 @@
             <!-- Product Summary -->
             <div class="flex items-center gap-3 mb-4 pb-4 border-b">
               <img
-                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=80"
+                src="./assets/img/kambing2.jpg"
                 alt="Product"
                 class="w-16 h-16 rounded-lg object-cover"
               />
@@ -461,11 +463,11 @@
 
             <!-- Action Buttons -->
             <div class="space-y-3">
-              <button
+              <!-- <button
                 class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl"
               >
                 + Keranjang
-              </button>
+              </button> -->
               <button
                 class="w-full bg-amber-600 hover:from-amber-700 hover:to-orange-700 text-white py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl"
               >
@@ -474,7 +476,7 @@
             </div>
 
             <!-- Additional Actions -->
-            <div class="grid grid-cols-3 gap-2 mt-4">
+            <!-- <div class="grid grid-cols-3 gap-2 mt-4">
               <button
                 class="flex items-center justify-center gap-2 py-3 border-2 border-gray-300 rounded-xl hover:border-amber-600 hover:bg-amber-50 transition-all"
               >
@@ -529,7 +531,7 @@
                 </svg>
                 <span class="text-sm font-medium">Share</span>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

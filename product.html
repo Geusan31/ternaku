@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketplace Ternak | ternaku.id</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./src/styles.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="shortcut icon"
-      href="https://ternaku.id/assets/front/images/logo1.png"
+      href="./assets/favicon/favicon.ico"
       type="image/x-icon"
     />
     <link
@@ -31,7 +30,7 @@
           <div class="flex items-center gap-2 text-sm">
             <a
               href="/"
-              class="text-emerald-600 hover:text-emerald-700 font-medium"
+              class="text-amber-600 hover:text-amber-700 font-medium"
               >Home</a
             >
             <svg
@@ -51,7 +50,7 @@
           </div>
           <a
             href="/"
-            class="text-sm text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-2"
+            class="text-sm text-amber-600 hover:text-amber-700 font-medium flex items-center gap-2"
           >
             <svg
               class="w-4 h-4"
@@ -318,6 +317,7 @@
             <div class="flex flex-wrap gap-3">
               <button
                 class="filter-chip active px-4 py-2 border-2 rounded-full text-sm font-medium"
+                onclick="toggleFilter(this)"
               >
                 Semua
               </button>
@@ -357,17 +357,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400"
+                  src="./assets/img/kambing3.jpg"
                   alt="Sapi Limosin"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -392,7 +392,7 @@
               </div>
               <div class="p-5">
                 <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-                  Ayam Kampung Super
+                  Kambing
                 </h3>
                 <p class="text-sm text-gray-600 mb-3">Bobot: 1.5-2 kg</p>
                 <div class="flex justify-between items-center mb-3">
@@ -444,17 +444,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=400"
+                  src="./assets/img/kambing1.jpg"
                   alt="Kambing Etawa"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -474,7 +474,7 @@
               </div>
               <div class="p-5">
                 <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-                  Kambing Etawa Perah Super
+                  Kambing Etawa
                 </h3>
                 <p class="text-sm text-gray-600 mb-3">Bobot: 45-60 kg</p>
                 <div class="flex justify-between items-center mb-3">
@@ -526,17 +526,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400"
+                  src="./assets/img/kambing5.jpg"
                   alt="Domba Garut"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -613,17 +613,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1568455433991-ac0a1e0c0a00?w=400"
+                  src="./assets/img/kambing4.jpg"
                   alt="Ayam Kampung"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -643,7 +643,7 @@
               </div>
               <div class="p-5">
                 <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
-                  Ayam Kampung Organik
+                  Domba
                 </h3>
                 <p class="text-sm text-gray-600 mb-3">Bobot: 1.2-1.8 kg</p>
                 <div class="flex justify-between items-center mb-3">
@@ -695,17 +695,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400"
+                  src="./assets/img/kambing6.jpg"
                   alt="Sapi Bali"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -782,17 +782,17 @@
             >
               <div class="relative h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=400"
+                  src="./assets/img/kambing7.jpg"
                   alt="Kambing Kacang"
                   class="w-full h-full object-cover"
                 />
                 <div class="product-overlay">
                   <div class="absolute bottom-4 left-4 right-4">
-                    <button
-                      class="w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                    <a href="./detail.html"
+                      class="block text-center w-full bg-white text-amber-600 py-2 rounded-full font-bold hover:bg-amber-600 hover:text-white transition-colors"
                     >
                       Lihat Detail
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -940,7 +940,7 @@
           <div>
             <div class="flex items-center gap-3 mb-4">
               <img
-                src="https://ternaku.id/assets/front/images/logo1.png"
+                src="./assets/logo/ternaku-logo.png"
                 alt="Logo"
                 class="h-12"
               />
