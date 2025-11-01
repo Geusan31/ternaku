@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syarat dan Ketentuan | ternaku.id</title>
-    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="preload"
+      href="/src/output.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/src/output.css" /></noscript>
     <!-- <link rel="stylesheet" href="./src/styles.css" />
     <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
@@ -31,9 +37,7 @@
     <div class="bg-white border-b">
       <div class="container mx-auto px-4 md:px-8 lg:px-32 py-4">
         <div class="flex items-center gap-2 text-sm">
-          <a
-            href="/"
-            class="text-amber-600 hover:text-amber-700 font-medium"
+          <a href="/" class="text-amber-600 hover:text-amber-700 font-medium"
             >Home</a
           >
           <svg
