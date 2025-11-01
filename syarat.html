@@ -11,8 +11,11 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="/src/output.css" /></noscript>
-    <!-- <link rel="stylesheet" href="./src/styles.css" />
-    <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body class="bg-gray-50">
     <!-- Header -->
@@ -1316,5 +1319,31 @@
         </div>
       </div>
     </div>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tocLinks = document.querySelectorAll(".toc-link");
+        function handleLinkClick(event) {
+          tocLinks.forEach((link) => {
+            link.classList.remove("active");
+            link.classList.remove("text-amber-600", "font-bold");
+            link.classList.add("text-gray-700");
+          });
+
+          this.classList.add("active");
+          this.classList.add("text-amber-600", "font-bold");
+          this.classList.remove("text-gray-700");
+        }
+
+        tocLinks.forEach((link) => {
+          link.addEventListener("click", handleLinkClick);
+        });
+
+        if (tocLinks.length > 0) {
+          tocLinks[0].classList.add("active");
+          tocLinks[0].classList.add("text-amber-600", "font-bold");
+          tocLinks[0].classList.remove("text-gray-700");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -54,13 +54,13 @@ function toggleMobileMenu() {
   menu.classList.toggle("hidden");
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 
-  mobileMenuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
     });
   });
 });
