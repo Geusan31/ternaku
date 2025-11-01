@@ -1,1 +1,323 @@
 @import "tailwindcss";
+@import 'swiper/css/bundle';
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 40% !important;
+  background-color: #d97706;
+  border-radius: 50%;
+  width: 3rem !important;
+  height: 3rem !important;
+
+  color: #ffffff !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='white'><path stroke-linecap='round' stroke-linejoin='round' d='M15.75 19.5 8.25 12l7.5-7.5' /></svg>");
+}
+
+.swiper-button-next {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='white'><path stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' /></svg>");
+}
+
+.caption-banner {
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+}
+
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.card-hover {
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(245, 158, 11, 0.2);
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeIn 0.8s ease;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #f59e0b;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+}
+
+.feature-icon {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.step-number {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+}
+
+.timeline-line {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 2px;
+  height: calc(100% - 60px);
+  background: linear-gradient(to bottom, #f59e0b, #d97706);
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.benefit-card {
+  background: white;
+  border-left: 4px solid #f59e0b;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.gradient-bg-parallax {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+}
+
+.filter-chip {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-chip:hover {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.filter-chip.active {
+  background-color: #f59e0b;
+  color: white;
+  border-color: #f59e0b;
+}
+
+.search-box {
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+
+.section-card {
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+}
+
+.toc-link {
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.toc-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 0;
+  background: #f59e0b;
+  transition: height 0.3s ease;
+}
+
+.toc-link:hover::before,
+.toc-link.active::before {
+  height: 100%;
+}
+
+.toc-link.active {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.content-section {
+  scroll-margin-top: 100px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.thumbnail {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  border-color: #f59e0b;
+}
+
+.thumbnail.active {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 2px #f59e0b;
+}
+
+.variant-option {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.variant-option:hover {
+  border-color: #f59e0b;
+  background-color: #fef3c7;
+}
+
+.variant-option.active {
+  border-color: #f59e0b;
+  background-color: #fef3c7;
+  font-weight: 600;
+}
+
+.tab-button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-button.active {
+  color: #059669;
+  font-weight: 600;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #059669;
+}
+
+.zoom-image {
+  cursor: zoom-in;
+}
+
+.zoom-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
