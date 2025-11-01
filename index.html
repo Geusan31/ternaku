@@ -216,6 +216,7 @@
       <button
         onclick="prevSlide()"
         class="absolute left-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-amber-600 p-4 rounded-full shadow-lg transition-all z-10"
+        aria-label="Slide sebelumnya"
       >
         <svg
           class="w-6 h-6"
@@ -234,6 +235,7 @@
       <button
         onclick="nextSlide()"
         class="absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-amber-600 p-4 rounded-full shadow-lg transition-all z-10"
+        aria-label="Slide berikutnya"
       >
         <svg
           class="w-6 h-6"
@@ -1249,9 +1251,7 @@
     <!-- CTA Gabung Bersama Kami -->
     <section
       class="py-20 gradient-bg-paralax text-white parallax"
-      style="
-        background-image: url('./assets/img/slide1.avif');
-      "
+      style="background-image: url('./assets/img/slide1.avif')"
     >
       <div class="bg-black/70 py-20">
         <div class="container mx-auto px-4 md:px-8 lg:px-32">
@@ -1362,7 +1362,10 @@
         <div class="max-w-5xl mx-auto">
           <div class="grid md:grid-cols-2 gap-8">
             <!-- Login Card -->
-            <div class="card-hover bg-white rounded-2xl shadow-xl p-8" id="login">
+            <div
+              class="card-hover bg-white rounded-2xl shadow-xl p-8"
+              id="login"
+            >
               <div class="text-center mb-8">
                 <div
                   class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -1428,10 +1431,14 @@
                   </div>
                 </div>
                 <div class="flex justify-between items-center">
-                  <label class="flex items-center">
+                  <label
+                    for="ingat_saya"
+                    class="flex items-center cursor-pointer"
+                  >
                     <input
+                      name="ingat_saya"
                       type="checkbox"
-                      class="w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-500"
+                      class="w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-500 cursor-pointer"
                     />
                     <span class="ml-2 text-sm text-gray-600">Ingat saya</span>
                   </label>
@@ -1443,7 +1450,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="w-full btn-primary text-white py-3 rounded-xl font-bold text-lg"
+                  class="cursor-pointer w-full btn-primary text-white py-3 rounded-xl font-bold text-lg"
                 >
                   Masuk
                 </button>
@@ -1531,23 +1538,24 @@
                     placeholder="Buat password"
                   />
                 </div>
-                <div class="flex items-start">
+                <div class="flex items-start cursor-pointer">
                   <input
+                    name="syarat"
                     type="checkbox"
                     class="w-4 h-4 mt-1 text-green-600 border-gray-300 rounded focus:ring-green-500"
                   />
-                  <span class="ml-2 text-sm text-gray-600"
+                  <label for="syarat" class="ml-2 text-sm text-gray-600"
                     >Saya setuju dengan
                     <a
                       href="/syarat.html"
                       class="text-green-600 hover:text-green-700 font-medium"
                       >syarat dan ketentuan</a
-                    ></span
+                    ></label
                   >
                 </div>
                 <button
                   type="submit"
-                  class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-lg transition-all hover:scale-105 hover:shadow-lg"
+                  class="cursor-pointer w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-lg transition-all hover:scale-105 hover:shadow-lg"
                 >
                   Daftar Sekarang
                 </button>
@@ -1827,7 +1835,7 @@
             </p>
             <div class="flex gap-3">
               <a
-                href="#"
+                href="https://facebook.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -1837,7 +1845,7 @@
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://instagram.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -1847,7 +1855,7 @@
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -1857,7 +1865,7 @@
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://wa.me/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -1920,7 +1928,9 @@
                 >
               </li>
               <li>
-                <a href="./product.html" class="hover:text-amber-400 transition-colors"
+                <a
+                  href="./product.html"
+                  class="hover:text-amber-400 transition-colors"
                   >Marketplace</a
                 >
               </li>
@@ -2025,7 +2035,9 @@
               <!-- <a href="#" class="hover:text-amber-400 transition-colors"
                 >Kebijakan Privasi</a
               > -->
-              <a href="./syarat.html" class="hover:text-amber-400 transition-colors"
+              <a
+                href="./syarat.html"
+                class="hover:text-amber-400 transition-colors"
                 >Syarat & Ketentuan</a
               >
               <!-- <a href="#" class="hover:text-amber-400 transition-colors">FAQ</a> -->
