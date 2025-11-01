@@ -106,7 +106,10 @@
             >
           </div>
 
-          <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+          <button
+            class="cursor-pointer md:hidden text-gray-700"
+            onclick="toggleMobileMenu()"
+          >
             <svg
               class="w-6 h-6"
               fill="none"
@@ -122,6 +125,41 @@
             </svg>
           </button>
         </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden absolute w-full bg-white shadow-lg py-4"
+      >
+        <a
+          href="#beranda"
+          class="block py-3 px-6 text-gray-700 hover:bg-amber-50 transition-colors"
+          >Beranda</a
+        >
+        <a
+          href="#tentang"
+          class="block py-3 px-6 text-gray-700 hover:bg-amber-50 transition-colors"
+          >Tentang Kami</a
+        >
+        <a
+          href="#panduan"
+          class="block py-3 px-6 text-gray-700 hover:bg-amber-50 transition-colors"
+          >Panduan</a
+        >
+        <a
+          href="#supermarket"
+          class="block py-3 px-6 text-gray-700 hover:bg-amber-50 transition-colors"
+          >Supermarket</a
+        >
+        <a
+          href="#daftar"
+          class="block py-3 px-6 text-gray-700 hover:bg-amber-50 transition-colors"
+          >Bergabung</a
+        >
+        <a
+          href="#login"
+          class="block py-3 px-6 text-amber-600 font-medium hover:bg-amber-50 transition-colors"
+          >Masuk</a
+        >
       </div>
     </nav>
 
@@ -1392,27 +1430,33 @@
 
               <form class="space-y-4">
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
                     >Username</label
                   >
                   <input
+                    id="email"
                     type="text"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-amber-600 focus:outline-none transition-colors"
                     placeholder="Masukkan email atau username"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="password"
+                    class="block text-gray-700 font-medium mb-2"
                     >Password</label
                   >
                   <input
+                    id="password"
                     type="password"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-amber-600 focus:outline-none transition-colors"
                     placeholder="Masukkan password"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label for="kode" class="block text-gray-700 font-medium mb-2"
                     >Masukkan Kode</label
                   >
                   <div class="flex items-center gap-4">
@@ -1424,6 +1468,7 @@
                     </div>
 
                     <input
+                      id="kode"
                       type="number"
                       class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-amber-600 focus:outline-none transition-colors"
                       placeholder="Masukkan kode"
@@ -1436,6 +1481,7 @@
                     class="flex items-center cursor-pointer"
                   >
                     <input
+                      id="ingat_saya"
                       name="ingat_saya"
                       type="checkbox"
                       class="w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-500 cursor-pointer"
@@ -1499,52 +1545,67 @@
 
               <form class="space-y-4">
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="nama_lengkap"
+                    class="block text-gray-700 font-medium mb-2"
                     >Nama Lengkap</label
                   >
                   <input
+                    id="nama_lengkap"
                     type="text"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-600 focus:outline-none transition-colors"
                     placeholder="Masukkan nama lengkap"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
                     >Email</label
                   >
                   <input
+                    id="email"
                     type="email"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-600 focus:outline-none transition-colors"
                     placeholder="Masukkan email"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="password"
+                    class="block text-gray-700 font-medium mb-2"
                     >Password</label
                   >
                   <input
+                    id="password"
                     type="password"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-600 focus:outline-none transition-colors"
                     placeholder="Masukkan password"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-700 font-medium mb-2"
+                  <label
+                    for="konfirmasi_password"
+                    class="block text-gray-700 font-medium mb-2"
                     >Konfirmasi Password</label
                   >
                   <input
+                    id="konfirmasi_password"
                     type="password"
                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-green-600 focus:outline-none transition-colors"
                     placeholder="Buat password"
                   />
                 </div>
-                <div class="flex items-start cursor-pointer">
+                <div class="flex items-start">
                   <input
+                    id="syarat"
                     name="syarat"
                     type="checkbox"
-                    class="w-4 h-4 mt-1 text-green-600 border-gray-300 rounded focus:ring-green-500"
+                    class="cursor-pointer w-4 h-4 mt-1 text-green-600 border-gray-300 rounded focus:ring-green-500"
                   />
-                  <label for="syarat" class="ml-2 text-sm text-gray-600"
+                  <label
+                    for="syarat"
+                    class="cursor-pointer ml-2 text-sm text-gray-600"
                     >Saya setuju dengan
                     <a
                       href="/syarat.html"
@@ -1837,6 +1898,7 @@
               <a
                 href="https://facebook.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Kunjungi Facebook kami"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -1847,6 +1909,7 @@
               <a
                 href="https://instagram.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Kunjungi instagram kami"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -1857,6 +1920,7 @@
               <a
                 href="https://x.com/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Kunjungi X kami"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -1867,6 +1931,7 @@
               <a
                 href="https://wa.me/"
                 class="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Hubungi Whatsapp kami"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path

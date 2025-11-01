@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "compress": "terser js/scripts.js -o js/scripts.min.js -c -m",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -50,9 +50,20 @@ sliderContainer.addEventListener("mouseleave", () => {
 showSlide(0);
 
 function toggleMobileMenu() {
-  const menu = document.querySelector(".md\\:flex");
+  const menu = document.getElementById("mobile-menu");
   menu.classList.toggle("hidden");
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
